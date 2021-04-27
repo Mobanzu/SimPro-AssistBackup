@@ -3,7 +3,7 @@ _Simple Protect Bot_
 
 [![python3.x](https://img.shields.io/badge/3.6%20%7C%203.7-blue.svg?&logo=python&label=Python)](https://www.python.org/downloads/release/python-372/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
-![Version](https://img.shields.io/badge/Version-5.3-red.svg)
+![Version](https://img.shields.io/badge/Version-1.0-red.svg)
 ![Build](https://img.shields.io/badge/Build-Unknown-lightgrey)
 
 ___
