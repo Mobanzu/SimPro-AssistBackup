@@ -1,0 +1,51 @@
+{
+    "settings": {
+        "allowban": false,
+        "antibots": false,
+        "autopurge": false,
+        "denyinvite": {},
+        "linkprotect": {},
+        "lockcancel": {},
+        "namelock": {},
+        "pictlock": {},
+        "pictprofile": false,
+        "protect": {},
+        "restartpoint": null,
+        "rname": "main",
+        "sname": "default",
+        "sqmode": false,
+        "strictmode": {}
+    },
+    "stats": {
+        "admins": {
+            "add": false,
+            "del": false,
+            "list": []
+        },
+        "antijs": {
+            "add": false,
+            "del": false,
+            "list": []
+        },
+        "banned": {
+            "add": false,
+            "del": false,
+            "list": []
+        },
+        "bots": {
+            "add": false,
+            "del": false,
+            "list": []
+        },
+        "owners": {
+            "add": false,
+            "del": false,
+            "list": []
+        },
+        "staffs": {
+            "add": false,
+            "del": false,
+            "list": []
+        }
+    }
+}
