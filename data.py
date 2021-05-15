@@ -85,7 +85,7 @@ class commands(threading.Thread):
 
     def kicking(self, to, target):
         for a in target:
-            try: client.kickoutFromGroup(to, [a])
+            try: self.client.kickoutFromGroup(to, [a])
             except: e = traceback.format_exc()
 
     def canceling(self, to, target):
@@ -96,8 +96,8 @@ class commands(threading.Thread):
     def inviting(self, to, target):
         for a in target:
             try:
-                client.findAndAddContactsByMid(a)
-                client.inviteIntoGroup(to, [a])
+                self.client.findAndAddContactsByMid(a)
+                self.client.inviteIntoGroup(to, [a])
             except: e = traceback.format_exc()
 
     def mycmd(self, text, rname, sname):
@@ -669,17 +669,7 @@ class commands(threading.Thread):
                                     self.client.sendMessage(to, "Protect already disabled.")
                         elif txt.startswith("lockcancel "):
                             spl = txt.replace("lockcancel ", "")
-                            if spl == "max":
-                                if to in self.settings["lockcancel"]:
-                                    if self.settings["lockcancel"][to] == 2:
-                                        self.client.sendMessage(to, "Lockcancel Max already enabled")
-                                    else:
-                                        self.settings["lockcancel"][to] = 2
-                                        self.client.sendMessage(to, "Lockcancel Max enabled.")
-                                else:
-                                    self.settings["lockcancel"][to] = 2
-                                    self.client.sendMessage(to, "Lockcancel Max enabled.")
-                            elif spl == "on":
+                            if spl == "on":
                                 if to in self.settings["lockcancel"]:
                                     if self.settings["lockcancel"][to] == 1:
                                         self.client.sendMessage(to, "Lockcancel already enabled.")
